@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TPDM_U2_Practica1_GarayPerezMarco</string>
+    <string-array name="tiposdeseguros">
+        <item>Seleccionar...</item>
+        <item>Seguro de casa</item>
+        <item>Seguro de auto</item>
+        <item>Seguro médico</item>
+    </string-array>
+</resources>

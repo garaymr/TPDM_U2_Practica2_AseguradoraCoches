@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:id="@+id/nombret"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/telt"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/nombret"
+        android:ems="9" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teléfono:"
+        android:id="@+id/telt"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/nombret"/>
+
+    <EditText
+        android:id="@+id/tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nombret"
+        android:layout_toRightOf="@id/telt"
+        android:layout_marginLeft="40dp"
+        android:ems="9"
+        android:inputType="number" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha:"
+        android:layout_below="@id/telt"
+        android:id="@+id/fechat"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fecha"
+        android:layout_marginLeft="60dp"
+        android:ems="9"
+        android:layout_toRightOf="@id/fechat"
+        android:layout_below="@id/telt"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo de seguro"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/fechat"
+        android:id="@+id/segurot"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/tiposdeseguros"
+        android:id="@+id/tipo"
+        android:layout_toRightOf="@id/segurot"
+        android:layout_below="@id/fechat"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripción:"
+        android:id="@+id/dest"
+        android:textSize="20dp"
+        android:layout_below="@id/segurot"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Pequeña descripción del seguro"
+        android:id="@+id/desc"
+        android:layout_toRightOf="@id/dest"
+        android:layout_below="@id/segurot"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descripcion"
+        android:layout_marginLeft="80dp"
+        android:text="Guardar Propietario"
+        android:textColor="#000000" />
+
+</RelativeLayout>
